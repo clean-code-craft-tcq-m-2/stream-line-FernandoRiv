@@ -16,7 +16,7 @@ jobs:
         sudo apt-get install -y gcovr
 
     - name: build
-      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o -g sender *.c* -D UTEST
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -g -o sender *.c* -D UTEST
       
     - name: run
       run: ./sender
