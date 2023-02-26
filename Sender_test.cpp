@@ -5,7 +5,7 @@
 
 TEST_CASE("SensorBase abstraction validation"){
     int testSID = 0;
-    char testPtr[SIDBUFFER];
+    char testPtr[PARAMSBUFFER];
     SECTION("Use of unhandled SID at constructor"){
         testSID = 4;
         SensorBase sTest(testSID);
