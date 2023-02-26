@@ -19,7 +19,7 @@ jobs:
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o -g sender *.c* -D UTEST
       
     - name: run
-      run: ./tddchecker
+      run: ./sender
 
     - name: collect coverage
       run: gcovr --exclude=".*test\.*" -r . --html --html-details -o coverage.html --print-summary
