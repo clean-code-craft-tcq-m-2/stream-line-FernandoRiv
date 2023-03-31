@@ -43,8 +43,8 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: pyinstaller
-          path: stream-line-FernandoRiv/dist/stream_line_sender.executable
+          path: dist/stream_line_sender.executable
       - name: Run build
         run: |
-          dist/stream_line_sender.executable
+          stream-line-FernandoRiv/dist/stream_line_sender.executable
 
