@@ -36,15 +36,15 @@ jobs:
           name: coverage
           path: ./htmlcov
           retention-days: 21
-      - name: Build sender
+      - name: Build receiver
         run: |
           pyinstaller --onefile receiver/stream_line_receiver.executable.py
       - name: Upload build
         uses: actions/upload-artifact@v2
         with:
           name: pyinstaller
-          path: stream-line-FernandoRiv/dist/stream_line_sender.executable
+          path: dist/stream_line_receiver.executable
       - name: Run build
         run: |
-          stream-line-FernandoRiv/dist/stream_line_sender.executable
+          dist/stream_line_receiver.executable
 
