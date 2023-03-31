@@ -4,3 +4,9 @@
 *.html
 *.css
 *.bat
+
+__pycache__
+.coverage
+htmlcov
+\build
+\dist
