@@ -38,7 +38,7 @@ jobs:
           retention-days: 21
       - name: Build sender
         run: |
-          pyinstaller --onefile stream_line_receiver.executable.py
+          pyinstaller --onefile receiver/stream_line_receiver.executable.py
       - name: Upload build
         uses: actions/upload-artifact@v2
         with:
